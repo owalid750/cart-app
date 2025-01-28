@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=OPOnw-9_Kds&list=PLQtNtS-WfRa9LbmD8ON7rWhn-AtKTGdkn&index=12
+
+next 
+    36:
+
+
+content 
+making cart app and implment redux tool kit to manage state
+ 

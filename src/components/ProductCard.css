@@ -1,0 +1,24 @@
+.product-card {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px !important;
+
+
+}
+
+.product-card-body {
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center;
+    color: white !important;
+    background-color: transparent;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: grid !important;
+    place-items: center !important;
+}
+
+.product-card-body:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
