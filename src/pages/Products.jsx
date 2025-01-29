@@ -41,7 +41,7 @@ export function Products() {
     }
     return (
         <Container>
-            <h1 className="products-header">Our Products</h1>
+            <h1 className="products-header text-center">Our Products</h1>
             <Row className="g-2 my-3">
                 {products.map(product => (
                     <Col key={product.id} xs={12} sm={6} md={4} lg={3}>

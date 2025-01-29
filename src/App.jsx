@@ -4,11 +4,16 @@ import { Home } from './pages/Home'
 import { Cart } from './pages/Cart'
 import { Products } from './pages/Products'
 import { NotFound } from './pages/NotFound'
+import ThemeToggle from './components/ThemeToggle'
+
+import "./App.css"
+
 function App() {
 
   return (
     <>
       <NavBarApp />
+      <ThemeToggle/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />

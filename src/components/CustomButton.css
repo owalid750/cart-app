@@ -67,9 +67,56 @@
     transition: background-color 0.3s ease;
 }
 
-.clear-btn:hover {    
+.clear-btn:hover {
     background-color: #c0392b;
 }
+
 .quantity {
     margin: 0 0.5rem;
+}
+
+/* toggle theme btn */
+.theme-toggle-btn {
+    background: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    font-size: 20px;
+    /* padding: 10px 15px; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+/* On Light Mode */
+body[data-bs-theme="light"] .theme-toggle-btn {
+    background-color: #ecf0f1;
+    color: #3498db;
+}
+
+/* On Dark Mode */
+body[data-bs-theme="dark"] .theme-toggle-btn {
+    background-color: #34495e;
+    color: #f39c12;
+}
+
+/* Button Hover Effect */
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Smooth Transition for the Sun/Moon Icon */
+.theme-toggle-btn svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+body[data-bs-theme="dark"] .theme-toggle-btn svg {
+    transform: rotate(180deg);
+    /* Smoothly rotate the icon when toggling */
 }
